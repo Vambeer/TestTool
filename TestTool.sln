@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTool.DAL", "TestTool.DAL\TestTool.DAL.csproj", "{4D2CB86C-991D-4350-853D-F5F504A9D5EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTool.Editor", "TestTool.Editor\TestTool.Editor.csproj", "{C336F820-10E4-4332-8915-0E6E32FF2A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTool.Player", "TestTool.Player\TestTool.Player.csproj", "{20542694-8BEC-46AC-B90C-12D3479DA4AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D2CB86C-991D-4350-853D-F5F504A9D5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2CB86C-991D-4350-853D-F5F504A9D5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2CB86C-991D-4350-853D-F5F504A9D5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2CB86C-991D-4350-853D-F5F504A9D5EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C336F820-10E4-4332-8915-0E6E32FF2A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C336F820-10E4-4332-8915-0E6E32FF2A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C336F820-10E4-4332-8915-0E6E32FF2A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C336F820-10E4-4332-8915-0E6E32FF2A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20542694-8BEC-46AC-B90C-12D3479DA4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20542694-8BEC-46AC-B90C-12D3479DA4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20542694-8BEC-46AC-B90C-12D3479DA4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20542694-8BEC-46AC-B90C-12D3479DA4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

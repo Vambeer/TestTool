@@ -1,0 +1,33 @@
+﻿<Window x:Class="TestTool.Player.PlayerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTool.Player"
+        mc:Ignorable="d"
+        Title="Прохождение тестирования" WindowState="Maximized" Height="Auto" Width="Auto" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" FontSize="40" Name="tbQuestionName" Padding="10,10,10,10" TextWrapping="Wrap" FontWeight="Bold"></TextBlock>
+        <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Stretch" MouseDoubleClick="lbAnswers_MouseDoubleClick" Name="lbAnswers" HorizontalContentAlignment="Stretch" Grid.Row="1" Grid.Column="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid HorizontalAlignment="Stretch" Margin="20,20,20,20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Text="{Binding Text}" Padding="5,5,5,5" FontSize="40" TextWrapping="Wrap"  />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button HorizontalAlignment="Left" Width="250" Grid.Row="2" Height="50" Name="btnPrev" Click="btnPrev_Click" FontSize="24" Margin="5,5,5,5">Предыдущий вопрос</Button>
+        <TextBlock HorizontalAlignment="Center" Grid.Row="2" Name="tbStatus" FontSize="24" Height="50"></TextBlock>
+        <Button HorizontalAlignment="Right" Width="250" Grid.Row="2" Height="50" Name="btnNext" Click="btnNext_Click"  FontSize="24" Margin="5,5,5,5">Следующий вопрос</Button>
+    </Grid>
+</Window>

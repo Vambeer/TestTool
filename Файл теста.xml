@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QuestionStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Тема опросника</Name>
+  <Questions>
+    <Question>
+      <Text>При срабатывании сигнального устройства ДАСВ в непригодной для дыхания среде газодымозащитник обязан:</Text>
+      <Replies>
+        <Reply>
+          <Text>Незамедлительно доложить команжиру звена ГДЗС и выйти в составе звена ГДЗС на свежий воздух</Text>
+          <IsCorrect>true</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Незамедлительно покинуть зону задымления</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>С разрешени командира звена ГДЗС выйти на свежий воздух</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Не покидать звено ГДЗС, обеспечить максимально экономичный расход воздуха в ДАСВ</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+      </Replies>
+    </Question>
+	  <Question>
+      <Text>Еще один вопрос:</Text>
+      <Replies>
+        <Reply>
+          <Text>Ответ 1</Text>
+          <IsCorrect>true</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Непраивльный</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Неправильный 2</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>       
+      </Replies>
+    </Question>
+	<Question>
+      <Text>Тес=кст вопоса:</Text>
+      <Replies>
+        <Reply>
+          <Text>Незамедлительно доложить команжиру звена ГДЗС и выйти в составе звена ГДЗС на свежий воздух</Text>
+          <IsCorrect>true</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Незамедлительно покинуть зону задымления</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>С разрешени командира звена ГДЗС выйти на свежий воздух</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Не покидать звено ГДЗС, обеспечить максимально экономичный расход воздуха в ДАСВ</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+      </Replies>
+    </Question>
+    <Question>
+      <Text>Текст вопроса</Text>
+      <Replies>
+        <Reply>
+          <Text>Отчет1</Text>
+          <IsCorrect>true</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Ответ 2</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+      </Replies>
+    </Question>
+    <Question>
+      <Text>Текст вопроса</Text>
+      <Replies>
+        <Reply>
+          <Text>Отчет1</Text>
+          <IsCorrect>true</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Ответ 2</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+      </Replies>
+    </Question>
+	<Question>
+      <Text>Текст вопроса3</Text>
+      <Replies>
+        <Reply>
+          <Text>Отчет1</Text>
+          <IsCorrect>true</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Ответ 2</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+      </Replies>
+    </Question>
+	<Question>
+      <Text>Текст вопроса4</Text>
+      <Replies>
+        <Reply>
+          <Text>Отчет1</Text>
+          <IsCorrect>true</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Ответ 2</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+      </Replies>
+    </Question>
+	<Question>
+      <Text>Текст вопроса5</Text>
+      <Replies>
+        <Reply>
+          <Text>Отчет1</Text>
+          <IsCorrect>true</IsCorrect>
+        </Reply>
+        <Reply>
+          <Text>Ответ 2</Text>
+          <IsCorrect>false</IsCorrect>
+        </Reply>
+      </Replies>
+    </Question>
+  </Questions>
+</QuestionStore>

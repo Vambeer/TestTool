@@ -1,0 +1,37 @@
+﻿<Window x:Class="TestTool.Player.Result"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTool.Player"
+        mc:Ignorable="d"
+        Title="Результаты теста" WindowState="Maximized" Height="Auto" Width="Auto" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" TextWrapping="Wrap" HorizontalAlignment="Left" Name="tbName" FontSize="30" Margin="10,10,10,10"></TextBlock>
+		<TextBlock Grid.Row="1" TextWrapping="Wrap" HorizontalAlignment="Left" Name="tbResult" FontSize="30" Margin="10,10,10,10"></TextBlock>
+        
+        <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Stretch" Name="lbAnswers" HorizontalContentAlignment="Stretch" Grid.Row="2" Grid.Column="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock FontSize="30" TextWrapping="Wrap" Grid.Row="0" Text="{Binding Text}" Margin="5,5,5,5" FontWeight="Bold"></TextBlock>
+                        <TextBlock FontSize="24" TextWrapping="Wrap" Grid.Row="1" Text="{Binding ProvidedAnswer}" Margin="25,5,5,5" Foreground="{Binding BgColor}"></TextBlock>
+                        <TextBlock FontSize="24" TextWrapping="Wrap" Grid.Row="2" Text="{Binding CorrectAnswer}"  Margin="25,5,5,5" Foreground="Green"></TextBlock>
+                        <Line Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Height="1"></Line>
+					</Grid>
+
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

@@ -1,0 +1,89 @@
+﻿<Window x:Class="TestTool.Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTool.Editor"
+        mc:Ignorable="d"
+        Title="Редактор теста" WindowState="Maximized" Height="Auto" Width="Auto" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"></RowDefinition>
+			<RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Width="200" HorizontalAlignment="Left" Click="btnCreate_Click" Name="btnCreate">Создать</Button>
+        <Button Grid.Row="0" Width="200" HorizontalAlignment="Left" Margin="200,0,0,0" Name="btnOpen" Click="btnOpen_Click">Открыть</Button>
+        <Button Grid.Row="0" Width="200" HorizontalAlignment="Left" Margin="400,0,0,0" Name="btnSave" Click="btnSave_Click">Сохранить</Button>
+        <TextBox Grid.Row="1" HorizontalAlignment="Stretch" Name="tbStoreName" FontSize="18" Padding="5,5,5,5" FontStyle="Italic"></TextBox>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+			</Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" FontSize="16" Padding="5,5,5,5">
+				Список вопросов:
+			</TextBlock>
+            <Button Name="btnCreateQuestion" Grid.Column="0" Grid.Row="0" Width="25" Margin="0,0,30,0" HorizontalAlignment="Right" Click="btnCreateQuestion_Click" Background="Transparent">
+                <Image Source="Icons/new.png"></Image>	
+			</Button>
+            <Button Name="btnDeleteQuestion" Grid.Column="0" Grid.Row="0" Margin="230,0,0,0" Width="25" HorizontalAlignment="Right" Click="btnDeleteQuestion_Click"  Background="Transparent">
+                <Image Source="Icons/delete.png"></Image>
+			</Button>
+            <TextBlock Grid.Row="0" Grid.Column="1" FontSize="16" Padding="5,5,5,5">
+				Варианты ответов:
+            </TextBlock>
+            <Button Name="btnCreateAnswer" Grid.Column="1" Grid.Row="0" Width="25" Margin="0,0,30,0" HorizontalAlignment="Right" Click="btnCreateAnswer_Click" Background="Transparent">
+                <Image Source="Icons/new.png"></Image>
+            </Button>
+            <Button Name="btnDeleteAnswer" Grid.Column="1" Grid.Row="0" Margin="230,0,0,0" Width="25" HorizontalAlignment="Right" Click="btnDeleteAnswer_Click"  Background="Transparent">
+                <Image Source="Icons/delete.png"></Image>
+            </Button>
+            <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Stretch" Name="lbQuestions" HorizontalContentAlignment="Stretch" Grid.Row="1" Grid.Column="0"  SelectionChanged="lbQuestions_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="60"/>
+                            </Grid.ColumnDefinitions>
+							
+                            <TextBlock Grid.Column="0" Text="{Binding Text}" Padding="5,5,5,5" FontSize="14" TextWrapping="WrapWithOverflow"  />
+                            <Button Name="btnEditQuestion" Width="25" Background="Transparent" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,30,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                                <Image Source="Icons/edit.png"></Image>
+                            </Button>
+                            <Button Grid.Column="1" Width="25" Background="Transparent"  HorizontalAlignment="Right" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                                <Image Source="Icons/delete.png"></Image>
+                            </Button>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+			</ListBox>
+            <ListBox  ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalContentAlignment="Stretch"  HorizontalAlignment="Stretch" Name="lbAnswers" Grid.Row="1" Grid.Column="1">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="60"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="{Binding Text}" Width="Auto" Padding="5,5,5,5" FontSize="14" TextWrapping="WrapWithOverflow"  />
+                            <Button Name="btnEditReply" Width="25" Background="Transparent" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,30,0">
+                                <Image Source="Icons/edit.png"></Image>
+                            </Button>
+                            <Button Name="btnDeleteReply" Width="25" Background="Transparent" Grid.Column="1"  HorizontalAlignment="Right">
+                                <Image Source="Icons/delete.png"></Image>
+                            </Button>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+</Window>
